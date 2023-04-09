@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        div{
+            background-color: aqua;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid blueviolet;
+            display: inline-block;
+        }
+        div#d1{
+            background-image: linear-gradient(to left, rgb(133, 66, 66), rgb(255, 193, 193), rgb(108, 108, 196), rgb(165, 165, 58));
+        }
+        div:hover{
+            background-image: linear-gradient(to bottom, rgb(179, 86, 179), rgb(54, 148, 54), yellow);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

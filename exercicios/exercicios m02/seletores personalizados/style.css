@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body{
+    background-color:#bbf7ca;
+}
+
+h1{
+    color: #9340d6;
+    font-weight: bolder;
+}
+
+h1#nelo{
+    background-color: #5cbe49;
+    color: #dbd936;
+    text-align: center;
+}
+
+h2{
+    color: #FA7F08;
+}
+
+.básico{
+    color: rgb(32, 58, 206);  
+    font-weight: bolder;
+}
+
+.intermadiário{
+   color: #F24405;
+}
+
+.avançado{
+  color: rgb(120, 211, 17);
+}
+
+.destaque{
+}
+

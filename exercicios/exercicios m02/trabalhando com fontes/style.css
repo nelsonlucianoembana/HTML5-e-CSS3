@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: ;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+body{
+    background-image: linear-gradient(to right, rgb(41, 173, 41), rgba(192, 181, 80, 0.829));
+}
+main{
+    background-image: linear-gradient(to bottom, hwb(0 82% 13%), rgb(46, 97, 206));
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    box-shadow: 5px 5px 5px rgba(184, 55, 55, 0.733);
+}
+h1{
+    color: rgb(115, 194, 37);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(32, 30, 30, 0.733);
+}
+h2{
+    color: blue;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+p{
+    text-align: justify;
+}
