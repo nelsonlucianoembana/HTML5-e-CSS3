@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+        <h1>Testando Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+
+            <!--<fieldset></fieldset> essa serve para dividir o seu conteúdo ou formulário, e a tag <legend></legend>, que vai ficar dentro da fielset, serve para colocar como uma legenda para mostrar do que se trata o seu conteúdo ou formulário-->
+
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                <!--Expressão Regular, serve para definir pradrão ou definir algo como você quiser, no caso do telefone, você coloca uma maneira, e é assim que o seu usuário deve colocá-lo do contrário não funciona.Um Regex sempre começa com ^(acento chapeú) e termina com $(sifrão), pode colocá-lo dentro dum parámetro que é pattern.
+                Ex:pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+                Aqui disse que, (\d{2}\) (dois dígitos, que vai ficar dentro de parentése)
+                \d{4,5}-(vai dar quatro ou cinco dígitos depois o traço(-))
+                \d{4}(depois do traço vai ser quatro dígitos)
+                Isso pode ser personlizado da maneira que quiser-->
+                <!--Devo procurar estudar mais sobre Regex (Expressão Regular)-->
+            </p>
+            <p>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
