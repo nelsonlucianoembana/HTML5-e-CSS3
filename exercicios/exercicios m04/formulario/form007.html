@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="1º Grupo de Regiões">
+                    <option value="oio">Oio</option>
+                    <option value="bol">Bolama</option>
+                    <option value="qui" selected>Quinara</option>
+                    <option value="cach">Cacheu</option>
+                </optgroup>
+                <optgroup label="2º Grupo de Regiões">
+                    <option value="baf">Bafaltá</option>
+                    <option value="gab">Gabú</option>
+                    <option value="bio">Biombo</option>
+                    <option value="tom">Tombali</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="adm">Administrador</option>
+                <option value="cont">Contablista</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="prof">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imeg">Mensagem:</label><br>
+            <textarea name="meg" id="imeg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
