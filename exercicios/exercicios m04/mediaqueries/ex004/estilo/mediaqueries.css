@@ -1,3 +1,85 @@
 @charset "UTF-8";
 
 /*Todas as demais medias */
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /*esse background image é desnecessário para impressora*/
+    }
+
+    main{
+        border: 2px solid black;
+        width: 600px;
+    }
+    main::after{
+        content: "Essa imprssão foi feita do site www.cursoemvideo.com";
+        text-decoration: overline; /*overline vai colocar uma linha em cima*/
+    }
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;} 
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {
+
+}*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+        body{
+            background-image: url(../imagens/back-pc.jpg);
+        }
+
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#pc{display: block;}
+        img#tv{display: none;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+       body{
+        background-image: url(../imagens/back-tv.jpg);
+       }
+
+        main{
+            width: 800px;
+        }
+
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#pc{display: none;}
+        img#tv{display: block;}
+}
